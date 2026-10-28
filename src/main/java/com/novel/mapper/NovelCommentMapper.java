@@ -1,0 +1,18 @@
+package com.novel.mapper;
+
+import com.novel.domain.po.NovelComment;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+
+/**
+* @author 钱力川
+* @description 针对表【novel_comment(小说评论表)】的数据库操作Mapper
+* @createDate 2026-10-12 08:44:12
+* @Entity com.novel.domain.po.NovelComment
+*/
+public interface NovelCommentMapper extends BaseMapper<NovelComment> {
+
+}
+
+
+
+
