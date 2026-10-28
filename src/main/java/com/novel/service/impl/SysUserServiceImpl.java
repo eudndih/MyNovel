@@ -79,6 +79,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser>
         Long userId = UserContext.getUserId();
         SysUser sysUser = sysUserMapper.selectById(userId);
         if (sysUser == null || Integer.valueOf(0).equals(sysUser.getStatus())) throw new BusinessException(401, "用户不存在或已禁用");
+        System.out.println(sysUser);
         return Result.success(sysUser);
     }
 

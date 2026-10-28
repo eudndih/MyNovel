@@ -24,3 +24,8 @@ spring:
 
 server:
   port: 8080
+minio:
+  endpoint: http://192.168.150.161:9000   # MinIO 服务地址
+  access-key: minioadmin            # 访问密钥
+  secret-key: minioadmin            # 安全密钥
+  bucket-name: novel-bucket            # 默认操作的工作桶
